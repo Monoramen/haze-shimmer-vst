@@ -1,4 +1,4 @@
-# Shimmer Granular
+# Haze Shimmer Granular
 
 Гранулярный шиммер-ревербератор в форматах VST3 и CLAP, написанный на Rust с использованием фреймворка [nih-plug](https://github.com/robbert-vanhelmholdt/nih-plug).
 
