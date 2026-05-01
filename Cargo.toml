@@ -1,13 +1,13 @@
 [package]
-name = "shimmer_granular"
+name = "hase_shimmer_granular"
 version = "0.1.0"
 edition = "2024"
 authors = ["monoramens <monoramens@gmail.com>"]
 license = "GPL-3.0-or-later"
-description = "Granular shimmer reverb VST3/CLAP plugin"
+description = "Haze Granular shimmer reverb VST3/CLAP plugin"
 
 [workspace]
-members = [".", "xtask"]
+
 [lib]
 crate-type = ["cdylib", "lib"]
 

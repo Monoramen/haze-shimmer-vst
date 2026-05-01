@@ -16,9 +16,9 @@ for arg in "$@"; do
     esac
 done
 
-cargo nih-plug bundle shimmer_granular --release
+cargo nih-plug bundle hase_shimmer_granular --release
 
-SRC="target/bundled/shimmer_granular.vst3"
+SRC="target/bundled/hase_shimmer_granular.vst3"
 
 if [ "$SYSTEM" -eq 1 ]; then
     DEST="/c/Program Files/Common Files/VST3"
@@ -29,9 +29,9 @@ fi
 
 mkdir -p "$DEST"
 
-if [ -e "$DEST/shimmer_granular.vst3" ]; then
-    rm -rf "$DEST/shimmer_granular.vst3"
+if [ -e "$DEST/hase_shimmer_granular.vst3" ]; then
+    rm -rf "$DEST/hase_shimmer_granular.vst3"
 fi
 
 cp -r "$SRC" "$DEST/"
-echo "Installed: $DEST/shimmer_granular.vst3"
+echo "Installed: $DEST/hase_shimmer_granular.vst3"
