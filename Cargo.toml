@@ -7,7 +7,7 @@ license = "GPL-3.0-or-later"
 description = "Granular shimmer reverb VST3/CLAP plugin"
 
 [workspace]
-
+members = [".", "xtask"]
 [lib]
 crate-type = ["cdylib", "lib"]
 
@@ -19,7 +19,10 @@ path = "src/bin/standalone.rs"
 default = []
 
 [dependencies]
-nih_plug = { git = "https://github.com/robbert-vdh/nih-plug.git", features = ["assert_process_allocs", "standalone"] }
+nih_plug = { git = "https://github.com/robbert-vdh/nih-plug.git", features = [
+    "assert_process_allocs",
+    "standalone",
+] }
 nih_plug_egui = { git = "https://github.com/robbert-vdh/nih-plug.git" }
 atomic_float = "1.1"
 
