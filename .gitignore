@@ -1,0 +1,6 @@
+/target
+**/*.rs.bk
+Cargo.lock
+*.vst3
+*.clap
+/bundled
